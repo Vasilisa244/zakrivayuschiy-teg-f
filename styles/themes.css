@@ -4,3 +4,57 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-dark {
+    --title-font-weight: 785;
+    --font-weight: 465;
+    --bg-color: #000000;
+    --accent-color: #00CC14;
+    --bg-image: repeating-linear-gradient(270deg, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
+    linear-gradient(#007f0c, #004306);
+    --stroke-text: #000000;
+}
+
+:root.theme-light {
+    --title-font-weight: 700;
+    --font-weight: 400;
+    --bg-color: #FFFFFF;
+    --accent-color: #000000;
+    --bg-image: repeating-linear-gradient(270deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --stroke-text: #FFFFFF;
+}
+
+    .theme-menu__list {
+        position: relative;
+      }
+
+.theme-menu__button:disabled::before {
+    content: "▶";
+    position: absolute;
+    right: 96px;
+  }
+
+@media (prefers-color-scheme: dark) {
+	:root {
+        --title-font-weight: 785;
+        --font-weight: 465;
+        --bg-color: #000000;
+        --accent-color: #00CC14;
+        --bg-image: repeating-linear-gradient(270deg, #000 0 2px, transparent 2px 4px),
+        repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
+        linear-gradient(#007f0c, #004306);
+        --stroke-text: #000000;
+    }
+
+        .theme-menu__list {
+            position: relative;
+          }
+
+    .theme-menu__button:disabled::before {
+        content: "▶";
+        position: absolute;
+        right: 96px;
+      }
+}
