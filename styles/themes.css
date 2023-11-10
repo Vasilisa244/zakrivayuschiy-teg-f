@@ -8,53 +8,56 @@
     --title-font-weight: 785;
     --font-weight: 465;
     --bg-color: #000000;
-    --accent-color: #00CC14;
-    --bg-image: repeating-linear-gradient(270deg, #000 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
-    linear-gradient(#007f0c, #004306);
+    --accent-color: #00cc14;
+    --bg-image: repeating-linear-gradient(270deg, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(#000 0 2px, transparent 2px 4px), linear-gradient(#007f0c, #004306);
     --stroke-text: #000000;
+    --button-bg-color: #000000;
+    --button-color: #00cc14;
+    --main-body: red;
 }
 
 :root.theme-light {
     --title-font-weight: 700;
     --font-weight: 400;
-    --bg-color: #FFFFFF;
+    --bg-color: #ffffff;
     --accent-color: #000000;
-    --bg-image: repeating-linear-gradient(270deg, #d3d3d3 0 2px, transparent 2px 4px),
-    repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
-    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-    --stroke-text: #FFFFFF;
+    --bg-image: repeating-linear-gradient(270deg, #d3d3d3 0 2px, transparent 2px 4px), repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px), linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --stroke-text: #ffffff;
+    --button-bg-color: #ffffff;
+    --button-color: #ffffff;
+    --main-body: red;
 }
 
-    .theme-menu__list {
-        position: relative;
-      }
+.theme-menu__list {
+    position: relative;
+}
 
 .theme-menu__button:disabled::before {
     content: "▶";
     position: absolute;
     right: 96px;
-  }
+}
 
 @media (prefers-color-scheme: dark) {
-	:root {
+    :root {
         --title-font-weight: 785;
         --font-weight: 465;
         --bg-color: #000000;
-        --accent-color: #00CC14;
-        --bg-image: repeating-linear-gradient(270deg, #000 0 2px, transparent 2px 4px),
-        repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
-        linear-gradient(#007f0c, #004306);
+        --accent-color: #00cc14;
+        --bg-image: repeating-linear-gradient(270deg, #000 0 2px, transparent 2px 4px), repeating-linear-gradient(#000 0 2px, transparent 2px 4px), linear-gradient(#007f0c, #004306);
         --stroke-text: #000000;
+        --button-bg-color: #000000;
+        --button-color: #00cc14;
+        --main-body: red;
     }
 
-        .theme-menu__list {
-            position: relative;
-          }
+    .theme-menu__list {
+        position: relative;
+    }
 
     .theme-menu__button:disabled::before {
         content: "▶";
         position: absolute;
         right: 96px;
-      }
+    }
 }
