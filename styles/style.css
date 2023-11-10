@@ -74,6 +74,7 @@
     text-transform: uppercase;
     background-color: transparent;
     border: none;
+    transition: color 0.5s;
 }
 
 .theme-menu__button:disabled::before {
@@ -117,10 +118,6 @@
 
 .theme-menu__button:focus-visible::after {
     width: 100%;
-}
-
-.theme-menu__button {
-    transition: color 0.5s;
 }
 
 .main {
@@ -201,7 +198,6 @@
 .card__icon-button {
     height: 38px;
     background: var(--bg-color, #fff);
-    border: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,7 +208,6 @@
     padding: 5px 11px;
     font-weight: var(--title-font-weight);
     font-size: 18px;
-    font-weight: 700;
 }
 
 .card_picture_item {
@@ -360,10 +355,6 @@
     transition: 0.3s 0.06s linear;
 }
 
-.like-icon.is-liked .heart {
-    animation: change-scale 0.3s 0.1s ease-in 1 alternate;
-}
-
 .like-icon.is-liked .sparks {
     fill: var(--main-body);
     animation: change-opacity 0.3s 0.3s ease-in 1 alternate forwards;
@@ -381,11 +372,6 @@
 
 .like-icon.is-liked .heart {
     animation: change-scale 0.3s 0.1s ease-in 1 alternate;
-}
-
-.like-icon.is-liked .sparks {
-    fill: var(--main-body);
-    animation: change-opacity 0.3s 0.3s ease-in 1 alternate forwards;
 }
 
 .like-icon .contour {
