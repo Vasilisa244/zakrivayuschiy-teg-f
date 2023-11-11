@@ -191,7 +191,7 @@
     padding: 9px 17px;
     justify-content: center;
     align-items: center;
-    border: 1px solid var(--accent-color, #000);
+    border: 2px solid var(--accent-color, #000);
     position: relative;
 }
 
@@ -221,7 +221,6 @@
     display: flex;
     padding: 50px clamp(34px, 12.5%, 180px) 105px;
     width: clamp(375px, 49%, 700px);
-    background: var(--bg-color, #fff);
     justify-self: center;
     align-content: center;
 }
@@ -297,6 +296,10 @@
     transform: scaleX(1);
 }
 
+.button:hover {
+    cursor: pointer;
+}
+
 .card__icon-button:focus {
     outline: none;
 }
@@ -367,6 +370,7 @@
 
 .like-icon.is-liked .heart {
     animation: change-scale 0.3s 0.1s ease-in 1 alternate;
+    transform-origin: center;
 }
 
 .like-icon .contour {
@@ -470,3 +474,4 @@
         padding: 51px 34px 102px;
     }
 }
+
